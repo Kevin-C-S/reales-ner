@@ -18,6 +18,8 @@ YOU NEED TO RUN IN YOUR CONSOLE (BETTER IF DONE IN A VENV) THE COMMAND:
 pip install -r requires.txt
 ********
 
+Then import the module "reto2.py" in the file you want to use the functions.
+
 
 
 ## 🐸  Aloha!
