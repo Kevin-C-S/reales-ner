@@ -6,7 +6,7 @@ import spacy
 from joblib import load
 import json
 import requests
-import reales_ner.ner as ner
+
 
 """
 The method receives a string as a parameter and then, 
@@ -185,7 +185,7 @@ def ner_from_url(url, output_path):
 # Examples:
 #pipeline_ner("El Amazonas está cerca del punto de inflexión de convertirse en una sabana, sugiere un estudio. La selva del Amazonas podría estar acercándose a un punto de inflexión crítico que podría hacer que este ecosistema biológicamente rico y diverso se transforme en una sabana de hierba.El destino de la selva tropical es crucial para la salud del planeta, ya que alberga una variedad única de vida animal y vegetal, almacena una enorme cantidad de carbono e influye en gran medida en los patrones climáticos globales.", "NLP.joblib")
     
-ner.ner_from_str("El Amazonas está cerca del punto de inflexión de convertirse en una sabana, sugiere un estudio. La selva del Amazonas podría estar acercándose a un punto de inflexión crítico que podría hacer que este ecosistema biológicamente rico y diverso se transforme en una sabana de hierba.El destino de la selva tropical es crucial para la salud del planeta, ya que alberga una variedad única de vida animal y vegetal, almacena una enorme cantidad de carbono e influye en gran medida en los patrones climáticos globales.", "JASON.json")
+#ner_from_str("El Amazonas está cerca del punto de inflexión de convertirse en una sabana, sugiere un estudio. La selva del Amazonas podría estar acercándose a un punto de inflexión crítico que podría hacer que este ecosistema biológicamente rico y diverso se transforme en una sabana de hierba.El destino de la selva tropical es crucial para la salud del planeta, ya que alberga una variedad única de vida animal y vegetal, almacena una enorme cantidad de carbono e influye en gran medida en los patrones climáticos globales.", "JASON.json")
 
 #ner_from_file("untitled.txt", "JASON.json")
 #ner_from_url("https://www.elespectador.com/ambiente/la-amazonia-colombiana-fue-la-cuarta-con-mas-deforestacion-durante-2021/", "JASON.json")
