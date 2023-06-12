@@ -24,7 +24,7 @@ Then run:
 ```
 pip install -r requirements.txt
 pip install pip install imbalanced-learn
-!wget -P reales_ner/ https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt
+wget -P reales_ner/ https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt
 if you dont have spacy model for spanish :
   - python -m spacy download es_core_news_sm
 ```
