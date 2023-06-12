@@ -24,14 +24,12 @@ Then run:
 ```
 pip install -r requirements.txt
 pip install pip install imbalanced-learn
+!wget -P reales_ner/ https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt
 if you dont have spacy model for spanish :
   - python -m spacy download es_core_news_sm
 ```
-********
-Now locate on the project location and run
-```
-!wget -P reales_ner/ https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt
-```
+
+
 
 Then import the module "reales_ner.ner" in the file you want to use the functions.
 Great, now you can get the jason with the entities and classification by text, file and url. The methods are:
