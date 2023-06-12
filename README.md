@@ -23,6 +23,9 @@ apt install libtesseract-dev -y
 Then run:
 ```
 pip install -r requirements.txt
+pip install pip install imbalanced-learn
+if you dont have spacy model for spanish :
+  - python -m spacy download es_core_news_sm
 ```
 ********
 Now locate on the project location and run
