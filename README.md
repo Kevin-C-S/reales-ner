@@ -30,14 +30,17 @@ python -m spacy download es_core_news_sm
 
 
 ********
-For the text challenge:
+
+### For the text challenge:
+
 Then import the module "reales_ner.ner" in the file you want to use the functions.
 Great, now you can get the jason with the entities and classification by text, file and url. The methods are:
 ner_from_str(text, output_path) 
 ner_from_file(text_path, output_path)
 ner_from_url(url, output_path)
 ********
-For the object detection challenge:
+
+### For the object detection challenge:
 Then import the module "reales_ner.impro" in the file you want to use the functions.
 
 You only should call the function detect_objects_in_video(video_path, output_path).
