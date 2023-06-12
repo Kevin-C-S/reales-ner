@@ -159,7 +159,7 @@ def pipeline_url(text,path):
 
 
 def ner_from_str(text, output_path):
-    jsono = pipeline_ner(text, "NLP.joblib")
+    jsono = pipeline_ner(text, "./reales_ner/NLP.joblib")
     with open(output_path, 'w') as outfile:
         json.dump(jsono, outfile)
     pass
@@ -168,14 +168,14 @@ def ner_from_file(text_path, output_path):
     text_file = open(text_path, "r")
     data = text_file.read()
     text_file.close()
-    jsono = pipeline_ner(data, "NLP.joblib")
+    jsono = pipeline_ner(data, "./reales_ner/NLP.joblib")
     with open(output_path, 'w') as outfile:
         json.dump(jsono, outfile)
     pass
 
 def ner_from_url(url, output_path):
     data = str(requests.get(url).text)
-    jsono = pipeline_url(data, "NLP.joblib")
+    jsono = pipeline_url(data, "./reales_ner/NLP.joblib")
     with open(output_path, 'w') as outfile:
         json.dump(jsono, outfile)
     pass
