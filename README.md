@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ********
 Now locate on the project location and run
 ```
-wget.download(https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt?dl=0, './reales_ner/yolo_custom_model.pt')
+wget.download('https://www.dropbox.com/s/1imxkvesu7iy4i0/yolo_custom_model.pt?dl=0', './reales_ner/yolo_custom_model.pt')
 ```
 
 Then import the module "reales_ner.ner" in the file you want to use the functions.
