@@ -13,12 +13,17 @@ Developed at **CodeFest Ad Astra**
 YOU NEED TO RUN IN YOUR CONSOLE (BETTER IF DONE IN A VENV) THE COMMAND:
 ********
 On linux:
+```
 apt-get install libgl1-mesa-glx -y
 pip install opencv-python
 apt install tesseract-ocr -y
 apt install libtesseract-dev -y
+```
 ********
+Then run:
+```
 pip install -r requirements.txt
+```
 ********
 Then import the module "reales_ner.ner" in the file you want to use the functions.
 Great, now you can get the jason with the entities and classification by text, file and url. The methods are:
