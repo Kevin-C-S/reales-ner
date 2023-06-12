@@ -175,8 +175,8 @@ def getTime(image):
 
 detector = CustomObjectDetection()
 detector.setModelTypeAsYOLOv3()
-detector.setModelPath('data_reto_1/models/yolov3_data_reto_1_mAP-0.30943_epoch-149.pt')
-detector.setJsonPath("data_reto_1_yolov3_detection_config.json")
+detector.setModelPath('./reales_ner/yolo_custom_model.pt')
+detector.setJsonPath("./reales_ner/data_reto_1_yolov3_detection_config.json")
 detector.loadModel()
 
 def convert_seconds_to_time(seconds):
